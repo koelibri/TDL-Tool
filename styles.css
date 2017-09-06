@@ -1,0 +1,38 @@
+/* Maße für Bilder */
+.panel-body img{
+	max-width:100px;
+	min-height:100px;
+	cursor:pointer;
+	margin: 5px;
+	display:inline;
+	outline: 3px solid black;
+}
+
+/* wenn man über ein Bild fährt, wird der Rand blau */
+.panel-body img:hover{
+	outline-color: #0066FF;
+}
+
+/* wenn man ein Bild angeklickt hat, wird der Rand etwas fetter und bleibt blau */
+.panel-body .isClicked{
+	outline-color: #0066FF;
+	outline-width: 5px;
+}
+
+/*richtige Tupel werden mit grünem Rand angezeigt*/
+.panel-body img.isCorrect, .panel-body img.isCorrect:hover{
+	outline-color: #00FF66;
+	outline-width: 5px;
+	cursor:default;
+}
+
+
+/*falsche Tupel werden mit rotem Rand angezeigt*/
+.panel-body img.isIncorrect{
+	outline-color: #FF6600;
+	outline-width: 5px;
+}
+
+.modelset {
+	display:none;
+}

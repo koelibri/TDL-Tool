@@ -1,0 +1,122 @@
+
+<html>
+<!-- 
+  Weiterentwicklung:
+
+- die 3 Boards als Teile einer großen SVG-Grafik realisieren und 
+  die einzelnen SVGs mittels SVG USE einbinden
+- keine separaten SVGs für die 3 Ansichten jedes Modells, sondern
+  eine SVG pro Modell mit je 3 Layern für die Ansichten
+- selektives Sichtbarmachen der Layer mittels CSS
+
+-->
+	<head>
+		<title>Räumliches Vorstellen und Zeichnungslesen</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="ansichten_memory.js"></script>
+	</head>
+	<body>
+		<header class="page-header">
+			<h1 class="container">Übung &quot;Räumliches Vorstellen und Zeichnungslesen&quot;</h1>
+		</header>
+
+		<main class="container">
+			<div class="well well-lg">
+				<nav id="navbar">
+					<ul class="nav nav-tabs" role="tablist">
+						<li role="presentation"><a href="#stufe1" aria-controls="stufe1" role="tab" data-toggle="tab">Stufe 1</a></li>
+						<li role="presentation" class="active"><a href="#stufe2" aria-controls="stufe2" role="tab" data-toggle="tab">Stufe 2</a></li>
+						<li role="presentation"><a href="#stufe3" aria-controls="stufe3" role="tab" data-toggle="tab">Stufe 3</a></li>
+					</ul>
+				</nav>
+	
+				<div class="tab-content">
+					<section id="stufe1" role="tabpanel" class="tab-pane fade in">
+						<p>Ordnen Sie der Vorderansicht die zugehörige Draufsicht und Seitenansicht zu. Stellen Sie sich dabei den Körper vor. Danach klicken Sie die jeweiligen Ansichten an.</p>
+						<ul class="modelset">
+							<li><a href="models/Set1/01.svg">models/Set1/01.svg</a></li>
+							<li><a href="models/Set1/02.svg">models/Set1/02.svg</a></li>
+							<li><a href="models/Set1/03.svg">models/Set1/03.svg</a></li>
+							<li><a href="models/Set1/04.svg">models/Set1/04.svg</a></li>
+							<li><a href="models/Set1/05.svg">models/Set1/05.svg</a></li>
+							<li><a href="models/Set1/06.svg">models/Set1/06.svg</a></li>
+						</ul>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Vorderansicht</p></div>
+									<div class="VBoard panel-body">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Seitenansicht</p></div>
+									<div class="SBoard panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Draufsicht</p></div>
+									<div class="DBoard panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section id="stufe2" role="tabpanel" class="tab-pane fade in active">
+						<p>Ordnen Sie der Vorderansicht die zugehörige Draufsicht und Seitenansicht zu. Stellen Sie sich dabei den Körper vor. Danach klicken Sie die jeweiligen Ansichten an.</p>
+						<ul class="modelset">
+							<li><a href="models/Set2/01.svg">models/Set2/01.svg</a></li>
+							<li><a href="models/Set2/02.svg">models/Set2/02.svg</a></li>
+							<li><a href="models/Set2/03.svg">models/Set2/03.svg</a></li>
+							<li><a href="models/Set2/04.svg">models/Set2/04.svg</a></li>
+							<li><a href="models/Set2/05.svg">models/Set2/05.svg</a></li>
+							<li><a href="models/Set2/06.svg">models/Set2/06.svg</a></li>
+							<li><a href="models/Set2/07.svg">models/Set2/07.svg</a></li>
+							<li><a href="models/Set2/08.svg">models/Set2/08.svg</a></li>
+							<li><a href="models/Set2/09.svg">models/Set2/09.svg</a></li>
+							<li><a href="models/Set2/10.svg">models/Set2/10.svg</a></li>
+							<li><a href="models/Set2/11.svg">models/Set2/11.svg</a></li>
+							<li><a href="models/Set2/12.svg">models/Set2/12.svg</a></li>
+						</ul>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Vorderansicht</p></div>
+									<div class="VBoard panel-body">
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Seitenansicht</p></div>
+									<div class="SBoard panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="panel panel-default">
+									<div class="panel-heading"><p class="panel-title">Draufsicht</p></div>
+									<div class="DBoard panel-body">
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

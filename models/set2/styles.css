@@ -1,0 +1,56 @@
+path {
+	fill: none;
+	stroke:#000000;
+	stroke-linecap:butt;
+	stroke-linejoin:miter;
+	stroke-miterlimit:4;
+	stroke-opacity:1;
+}
+
+/** Volllinie breit **/
+.VL_b {
+	stroke-width:0.07 !important;
+	stroke-dasharray:none;
+}
+
+/** Strichlinie breit **/
+.SL_b {
+	stroke-width:0.07 !important;
+	stroke-dasharray:0.56, 0.14 !important;
+	stroke-dashoffset:0;
+}
+
+/** Strichpunktlinie breit **/
+.SPL_b {
+	stroke-width:0.07 !important;
+	stroke-dasharray:0.56, 0.14, 0.07, 0.14 !important;
+	stroke-dashoffset:0;
+}
+
+/** Volllinie schmal **/
+.VL_s {
+	stroke-width:0.035 !important;
+	stroke-dasharray:none;
+}
+
+/** Strichlinie schmal **/
+.SL_s {
+	stroke-width:0.035 !important;
+	stroke-dasharray:0.28, 0.07 !important;
+	stroke-dashoffset:0;
+}
+
+/** Strichpunktlinie schmal **/
+.SPL_s {
+	stroke-width:0.035 !important;
+	stroke-dasharray:0.42, 0.07, 0.035, 0.07 !important;
+	stroke-dashoffset:0;
+}
+
+/** Strich-Zweipunktlinie schmal **/
+.SZPL_s {
+	stroke-width:0.035 !important;
+	stroke-dasharray:0.28, 0.07, 0.035, 0.07, 0.035, 0.07 !important;
+	stroke-dashoffset:0;
+}
+

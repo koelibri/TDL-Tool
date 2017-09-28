@@ -11,12 +11,10 @@ Auf jeder Stufe werden die drei Hauptansichten (Frontansicht, Seitenansicht von 
 
 Korrekt ausgewählte Darstellungen werden dauerhaft als richtig gekennzeichnet und sind nicht mehr anwählbar.
 
-[Zur Online-Vorschau](http://htmlpreview.github.io/?https://github.com/koelibri/TDL-Tool/blob/master/livedemo.html)
-
 ## Modelle
 Zur Darstellung der Ansichten werden SVG-Dateien verwendet. Pro Modell wird eine SVG-Datei verwendet, in der die drei Hauptansichten in getrennten Gruppierungen konstruiert wurden und als separate Targets angesprochen werden können. Alle drei Ansichten benutzen den gleichen Viewport und würden sich bei einer gemeinsamen Darstellung daher überlagern. Die einzelnen Ansichten können mittels Target-Angabe wie folgt erreicht un z.B. in HTML-Seiten eingebunden werden:
 
-- Frontansicht eines in der Datei 01.svg gespeicherten Modells:			01.svg#V
-- Linke Seitansicht eines in der Datei 01.svg gespeicherten Modells:	01.svg#L
-- Draufsicht eines in der Datei 01.svg gespeicherten Modells:			01.svg#D
+- Frontansicht eines in der Datei 01.svg gespeicherten Modells:			01.svg#V	[Live-Demo](http://htmlpreview.github.io/?https://github.com/koelibri/TDL-Tool/blob/master/model/set1/01.svg#V)
+- Linke Seitansicht eines in der Datei 01.svg gespeicherten Modells:	01.svg#L	Live-Demo](http://htmlpreview.github.io/?https://github.com/koelibri/TDL-Tool/blob/master/model/set1/01.svg#L)
+- Draufsicht eines in der Datei 01.svg gespeicherten Modells:			01.svg#D	Live-Demo](http://htmlpreview.github.io/?https://github.com/koelibri/TDL-Tool/blob/master/model/set1/01.svg#D)
 

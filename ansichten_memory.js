@@ -143,4 +143,5 @@ function Board (ids, mss, fs, ss, ts) {
  $(function($){
 	$("#stufe1").data("board", new Board("#stufe1", ".modelset a", "#V", "#L", "#D"));
 	$("#stufe2").data("board", new Board("#stufe2", ".modelset a", "#V", "#L", "#D"));
+	$("#stufe3").data("board", new Board("#stufe3", ".modelset a", "#V", "#L", "#D"));
  })

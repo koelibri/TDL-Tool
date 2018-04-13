@@ -11,6 +11,22 @@
 
 	<!-- Bereich für Definitionen: Style-Vorschrifen, Symbole, etc. -->
 	<defs>
+		<pattern id="CutSurface" x="0" y="0" width="0.5" height="0.5" patternUnits="userSpaceOnUse" patternTransform="rotate(315)">
+			<path d="M0,0.25 h 10" class="VL_s"/>
+    	</pattern>	
+
+      <marker id="arrowRight" markerWidth="14" markerHeight="14" refX="2" refY="4" orient="auto">
+        <path d="M2,2 v4 l8,-2z "/>
+      </marker>
+ 
+      <marker id="arrowLeft" markerWidth="14" markerHeight="14" refX="10" refY="4" orient="auto">
+        <path d="M10,2 v4 l-8,-2z "/>
+      </marker>
+ 
+      <marker id="diameter" markerWidth="14" markerHeight="14" refX="7" refY="0" orient="auto">
+        <text x="0" y="5">&#x2300;</text>
+      </marker>
+ 
 		<style type="text/css">
 		<![CDATA[
 			
@@ -78,6 +94,11 @@
 				stroke-dashoffset:0;
 			}
 			
+			/** Schnittflaeche **/
+			.CSF path{
+				fill: url(#CutSurface);
+			}
+			
 		]]>
 		</style>
 	</defs>
@@ -87,6 +108,11 @@
 		<!-- Sichtbare Kanten -->
 		<g class="VL_b">
 			<path d="M -3.0,4.0 H 3.0 V 2.0 H 1.0 V -2.0 H 3.0 V -4.0 H -3.0 V -2.0 H -1.0 V 2.0 H -3.0 Z"/>
+		</g>
+		<!-- Sichtbare Schnittflaechen -->
+		<g class="VL_b CSF">
+			<path d="M -3.0,4.0 H -2.0 V 0.0 H -3.0 Z"/>
+			<path d="M 2.0,4.0 H 3.0 V -4.0 H 2.0 Z"/>
 		</g>
 		<!-- Verdeckte Kanten -->
 		<g class="SL_s">
